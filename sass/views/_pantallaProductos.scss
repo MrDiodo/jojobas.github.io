@@ -1,0 +1,89 @@
+.gridProductos {
+    display: grid;
+    grid-template-columns: 785px 655px;
+    grid-template-rows: 202px 543px 90px;
+    padding: 30px;
+    grid-gap: 10pxs;
+}
+
+.titulo {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+.descripcionProducto {
+
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+
+}
+
+.precioYcarrito {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+}
+
+.fotoProducto {
+
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    justify-content: center;
+    align-content: center;
+
+
+}
+
+
+.BackgroundPantallaProductos {
+    background-image: url("../../img/backPantallaProductos.jpg");
+}
+
+.barrasGeneralPantallaProductos {
+
+    width: 856px;
+    height: 418px;
+    left: 497px;
+    top: 1252px;
+
+    @include flex(row ,space-around,center,absolute);
+
+
+}
+
+.fotoLogo2PantallaProductos {
+    position: absolute;
+    width: 355px;
+    height: 355px;
+    left: 98px;
+    top: 1252px;
+
+}
+
+
+.cantidad{
+    position: absolute;
+    width: 111px;
+    height: 74px;
+    left: 91px;
+    background-color: var(--primary);
+}
+
+.agregarCarrito{
+    position: absolute;
+width: 174px;
+height: 74px;
+left: 210px;
+background-color: var(--primary);
+}
+
+.descripcionProducto{
+    font-size: 30px;
+    text-align: left;
+}
+
+.titulo h1{
+    font-size: 60px;
+    &h2{
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,562 @@
+
+
+
+
+/* Estilos index */
+
+
+
+
+.container {
+    width: 1152px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoNav {
+    display: flex;
+    align-items: center;
+}
+
+.logoNav svg {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.logoNav svg path {
+    fill: pure;
+}
+
+.nav-wrapper ul.nav-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-wrapper ul.nav-list li {
+    margin-left: 30px;
+    padding: 20px 0;
+    position: relative;
+}
+
+.nav-wrapper ul.nav-list li a {
+    color: pure;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease-in-out;
+}
+
+.nav-wrapper ul.nav-list li a:hover {
+    color: $dark-gray;
+}
+
+.nav-wrapper ul.nav-list li.active a {
+    color: pure;
+}
+
+
+.btn {
+    background: var(--primary);
+    color: pure;
+    outline: none;
+    padding: 8px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border: 1px solid transparent;
+    transition: all .5s ease-in-out;
+}
+
+.btn:hover {
+    background: transparent;
+    border-color: pure;
+}
+
+main section.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 160px;
+}
+
+main section.header h1 {
+    font-size: 36px;
+    font-weight: 100;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+main section.header h4 {
+    font-size: 18px;
+    font-weight: 400;
+    color: $dark-gray;
+    margin-bottom: 20px;
+}
+
+nav ul.dropdown-list {
+    list-style-type: none;
+    display: block;
+    background: $smoke;
+    padding: 6px 16px;
+    position: absolute;
+    width: max-content;
+    z-index: 9999;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nav-wrapper ul.dropdown-list li {
+    margin-left: 0;
+    padding: 5px 0;
+}
+
+.nav-wrapper ul.dropdown-list li a {
+    color: $dark;
+}
+
+.nav-wrapper ul.nav-list li:hover .dropdown-list {
+    opacity: 1;
+    pointer-events: auto;
+    animation: moveUp .5s ease-in-out forwards;
+}
+
+@keyframes moveUp {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(20px);
+    }
+}
+
+.paty {
+    display: none;
+}
+
+.mobile .paty {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.mobile .paty span {
+    background: pure;
+    width: 28px;
+    height: 2px;
+    margin-bottom: 8px;
+}
+
+.mobile ul.nav-list {
+    background: -webkit-linear-gradient(45deg, #434343, #000000);
+    background: linear-gradient(45deg, #434343, #000000);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s ease-in-out;
+}
+
+.paty,
+.logoNav {
+    z-index: 9999;
+}
+
+.mobile ul.nav-list.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.mobile .paty span {
+    transform-origin: left;
+    transition: all .3s ease-in-out;
+}
+
+.mobile ul.nav-list li a {
+    font-size: 20px;
+}
+
+.mobile ul.dropdown-list {
+    position: relative;
+    background: transparent;
+    text-align: center;
+    height: 0;
+    overflow-y: hidden;
+    transition: opacity 1s ease-in-out;
+    padding-top: 0;
+}
+
+.mobile .nav-wrapper ul li:hover .dropdown-list {
+    height: max-content;
+    padding-top: 6px;
+}
+
+.mobile ul.nav-list li {
+    margin-left: 0;
+    text-align: center;
+}
+
+.mobile .nav-wrapper ul.dropdown-list li a {
+    color: $dark-gray;
+}
+
+
+.BackIndex {
+    background-image: url(../jojobas/Fotos/fondo.png);
+    height: 750px;
+    left: 0px;
+    top: 80px;
+
+}
+
+.Encabezado .Encabezado__TituloPrincipal {
+    position: absolute;
+    width: 522.7px;
+    height: 139.99px;
+    left: 46.36px;
+    top: 383.9px;
+    font-size: 64px;
+}
+
+.Encabezado__BotonG {
+
+    position: absolute;
+    width: 156.05px;
+    height: 28.71px;
+    left: 136.87px;
+    top: 590.1px;
+    font-size: 26px;
+}
+
+.fotoYBack {
+    position: absolute;
+    width: 886px;
+    height: 543px;
+    left: 482px;
+    top: 203px;
+    background: rgba(255, 247, 248, 0.6);
+}
+
+.Encabezado__Foto {
+    padding: 11px 175px 10px 175px;
+}
+
+.PrimerProducto__Imagen {
+    position: absolute;
+    width: 413px;
+    height: 411px;
+    left: 107px;
+    top: 938px;
+
+}
+
+
+.PrimerProducto__Imagen__back {
+    position: absolute;
+    width: 516px;
+    height: 516px;
+    left: 55px;
+    top: 886px;
+}
+
+.PrimerProducto__parrafo__back {
+
+    position: absolute;
+    width: 772px;
+    height: 516px;
+    left: 625px;
+    top: 886px;
+}
+
+.PrimerProducto__Parrafo {
+    position: absolute;
+    width: 578.9px;
+    height: 142.45px;
+    left: 713.76px;
+    top: 1045.72px;
+    text-align: left;
+    font-size: 36px;
+}
+
+.PrimerProducto__Boton {
+    position: absolute;
+    width: 227.55px;
+    height: 34.45px;
+    left: 1082.04px;
+    top: 1286.72px;
+    text-align: right;
+    font-size: 26px;
+
+}
+
+.PrimerParrafo__Imagen {
+
+    position: absolute;
+    width: 1407px;
+    height: 306px;
+    left: 17px;
+    top: 1449px
+}
+
+.PrimerParrafo__Imagen__back {
+
+    position: absolute;
+    width: 1326px;
+    height: 244px;
+    left: 57px;
+    top: 1480px;
+
+}
+
+.PrimerParrafo__Parrafo {
+
+    position: absolute;
+    width: 723px;
+    height: 45px;
+    left: 365px;
+    top: 1530px;
+    font-family: Sofia Pro;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.PrimerParrafo__boton {
+    position: absolute;
+    width: 143px;
+    height: 36px;
+    left: 1149px;
+    top: 1655px;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 36px;
+    text-align: right;
+
+}
+
+.SegundoProducto__Imagen {
+    position: absolute;
+    width: 516px;
+    height: 516px;
+    left: 871px;
+    top: 1792px;
+}
+
+
+.SegundoProducto__Imagen__Back {
+    position: absolute;
+    width: 413px;
+    height: 411px;
+    left: 922px;
+    top: 1841px;
+
+}
+
+.SegundoProducto__parrafo__Back {
+
+    position: absolute;
+    width: 772px;
+    height: 516px;
+    left: 73px;
+    top: 1792px;
+
+}
+
+
+.SegundoProducto__Parrafo {
+
+    position: absolute;
+    width: 578.9px;
+    height: 142.45px;
+    left: 201px;
+    top: 1950px;
+    text-align: left;
+    font-size: 36px;
+}
+
+.SegundoParrafo__Boton {
+    position: absolute;
+    width: 188px;
+    height: 36px;
+    left: 547px;
+    top: 2210px;
+
+
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 36px;
+
+}
+
+.gridCubos {
+    background-color: rgba(196, 196, 196, 0.3);
+    ;
+    position: absolute;
+    width: 1324px;
+    height: 1295px;
+    left: 63px;
+    top: 2383px;
+
+}
+
+.gridCubos {
+    display: grid;
+    grid-template-columns: 345px 345px 345px;
+    grid-template-rows: 345px 345px 345px;
+    justify-content: center;
+    align-content: center;
+    padding: 38px;
+    grid-gap: 38px;
+
+}
+
+.gridCuadrados1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+
+    background: #FFF7F8;
+    border: 3px solid #000000;
+    box-sizing: border-box;
+
+}
+
+.gridsCuadrados2 {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    background-image: url(../jojobas/Fotos/serumPuntasGrid.png);
+}
+
+.gridsCuadrados3 {
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+    background-image: url(../jojobas/Fotos/jabonesGrid.png);
+}
+
+.gridsCuadrados4 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    background-image: url(../jojobas/Fotos/gelLimpiezaFacialGrid.png);
+}
+
+.gridsCuadrados5 {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    background-image: url(../jojobas/Fotos/cremaGrid.png);
+}
+
+.gridsCuadrados6 {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+    background-image: url(../jojobas/Fotos/gridsIndexFondo.png);
+}
+
+.gridsCuadrados7 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    background-image: url(../jojobas/Fotos/sss.png);
+}
+
+.gridsCuadrados8 {
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+    background-image: url(../jojobas/Fotos/Desodorante\ crema\ 2\ Grid.png);
+}
+
+.gridsCuadrados9 {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    background-image: url(../jojobas/Fotos/gridsIndexFondo.png);
+
+}
+
+.Cuadrados1__Cubo1__Boton{
+    font-weight: 300;
+font-size: 20px;
+line-height: 30px;
+}
+    
+.barrasGeneral {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    position: absolute;
+    align-items: center;
+    width: 856px;
+    height: 418px;
+    left: 497px;
+    top: 3934px;
+
+
+}
+
+.fotoLogo2 {
+    position: absolute;
+    width: 355px;
+    height: 355px;
+    left: 98px;
+    top: 3970px;
+
+}
+
+.footer {
+    position: absolute;
+    width: 1440px;
+    height: 100px;
+    left: 0px;
+    top: 4467px;
+    text-align: center;
+}
+
+
+/* Estilos PagProductos */
+
+/* Estilos PantallaProductos */
+
+
+/* Estilos VentanaInfo */
+
+.ventaInfoBack{
+    background-image: url(./img/ventaInfoBack.png);
+    width: 1440px;
+height: 658px;
+left: 0px;
+top: 0px;
+
+}
+
+.h1VentaInfo{
+    position: absolute;
+width: 366px;
+height: 65px;
+left: 138px;
+top: 297px;
+
+font-family: 'Sofia Pro';
+font-style: normal;
+font-weight: 300;
+font-size: 64px;
+line-height: 65px;
+}
+
+

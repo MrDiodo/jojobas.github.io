@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before {
+  text-decoration: none;
+  list-style: none;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $fontPrimary;
+  background-color: $primary;
+}
+
+p {
+  font-size: 30;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+  color: #000000;
+}
