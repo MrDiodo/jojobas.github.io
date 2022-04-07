@@ -1,0 +1,20 @@
+// variables
+
+@import "./misc/_variables.scss";
+
+// globales
+
+@import "./misc/_normalize.scss";
+
+@import "./misc/_mixins.scss";
+
+// partials
+@import "./partials/_header.scss";
+
+@import "./partials/_footer.scss";
+
+// views
+
+@import "views/home.scss";
+@import "views/pantallaProductos";
+@import "views/ventaInfo";

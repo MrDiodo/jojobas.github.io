@@ -1,0 +1,22 @@
+.gridCubos {
+    display: grid;
+    grid-template-columns: 345px 345px 345px;
+    grid-template-rows: 345px 345px 345px;
+    justify-content: center;
+    align-content: center;
+    padding: 38px;
+    grid-gap: 38px;
+
+    
+
+}
+@mixin flex ($direction, $justify, $aling, $position) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $aling;
+    position:$position ;
+   
+}
+
+

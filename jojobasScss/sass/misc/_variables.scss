@@ -1,0 +1,22 @@
+ $primary: #FFF7F8;
+ $dark: #232323;
+ $pure: rgb(0, 0, 0);
+ $smoke: whitesmoke;
+ $dark-gray: #999;
+ $fontPrimary: "Sofia Pro", sans-serif; 
+
+ $sizes:(
+XLarge: 3.75rem,
+XLargeAlternative: 4rem ,
+Large: 2.25rem,
+Medium: 1.875rem,
+Samall: 1.625rem,
+Xsmall: 1.25rem
+ );
+
+ @each $var, $val in $sizes {
+     .font#{$var} {
+         font-size: #{$val};
+     }
+     
+ }
